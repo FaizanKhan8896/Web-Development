@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array : Reduce</title>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            //sum= to calculate sum, ele = current element 0= initial value of sum
+        let s = arr.reduce((sum, ele) => sum + ele, 0)
+        console.log(s)
+
+
+        let userCart = [{
+                pid: 1001,
+                pName: 'Mobile',
+                price: 30000
+            }, {
+                pid: 1002,
+                pName: 'Laptop',
+                price: 40000
+            }, {
+                pid: 1003,
+                pName: 'Watch',
+                price: 3000
+            }, {
+                pid: 1004,
+                pName: 'Ipad',
+                price: 70000
+            }, {
+                pid: 1005,
+                pName: 'Mobile',
+                price: 20000
+            },
+
+        ]
+        let a = userCart.reduce((sum, e) => sum + e.price, 0);
+        console.log(a);
+    </script>
+</head>
+
+<body>
+    <h1>
+        Array : Reduce
+    </h1>
+</body>
+
+</html>

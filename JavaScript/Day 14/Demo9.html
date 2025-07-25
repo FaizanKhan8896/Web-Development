@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Filter</title>
+    <script>
+        let arr = [1, 2, 3, 4, 5]
+
+        // function myCallback(ele) {
+        //     if (ele % 2 == 0)
+        //         return true
+        // }
+        // let r = arr.filter(myCallback)
+        // console.log(r)
+
+
+        let r = arr.filter((ele) => {
+            if (ele % 2 == 0)
+                return true
+        })
+        console.log(r)
+
+
+
+        const cities = [{
+                name: "Mumbai",
+                pop: 10000
+            }, {
+                name: "Kanpur",
+                pop: 2000
+            }, {
+                name: "Delhi",
+                pop: 1000
+            }, {
+                name: "Bihar",
+                pop: 5000
+            }, {
+                name: "Patna",
+                pop: 1000
+            },
+
+        ]
+        let a = cities.filter((e) => {
+            if (e.pop >= 2000) return true
+        })
+        console.log(a)
+    </script>
+</head>
+
+<body>
+    <h1>Array : Filter</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        let data = {
+            uid: 1001,
+            unm: 'Sachin',
+            email: 'Sachin@gmail.com',
+            gender: 'Male',
+            //in anonymous function this refers to the curr obj
+            fun1: function() {
+                console.log('fun1 calling....');
+                console.log(this.unm);
+                console.log(this) //curr obj
+
+
+            },
+            //in arrow function this refers to the window obj
+
+            fun2: () => {
+                console.log("Function 2 calling......");
+                console.log(this.unm) //undefined
+                console.log(this) //window obj
+
+
+            }
+        }
+        console.log(data.unm)
+        data['salary'] = 10000;
+        data['email'] = "demo@gmail.com"
+        console.log(data)
+
+        //return arr of values
+        let values = Object.values(data)
+        console.log(values)
+
+
+        //return arr of keys
+        let keys = Object.keys(data)
+        console.log(keys)
+
+
+        data.fun1()
+        data.fun2()
+        console.log(this) //window obj
+    </script>
+</head>
+
+<body>
+    <h1>Object</h1>
+</body>
+
+</html>

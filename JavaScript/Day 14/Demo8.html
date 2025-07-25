@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array : Spread Operator, Destructuring</title>
+    <script>
+        // let arr1 = [100, 200, 300, 400, 500];
+        // let arr2 = [1, 2, 3, 4, 5]
+        // //...spread operator
+        // let arr3 = [...arr1, ...arr2]
+        // console.log(arr3);
+
+
+        //Destructuring
+        // let arr = [100, 200, 300]
+        // let [a, b, c] = arr;
+        // console.log(a, b, c)
+
+
+        let products = [{
+                proName: 'Smart Watch',
+                price: 4000
+            }, {
+                proName: 'Television',
+                price: 14000
+            }, {
+                proName: 'Laptop',
+                price: 50000
+            }, {
+                proName: 'Air Pods',
+                price: 1000
+            },
+
+        ]
+        let rupee = 89
+        let r = products.forEach((ele) => {
+            console.log(`Product : ${ele.proName} Price in Rupee: ${ele.price *rupee}`)
+        })
+        console.log(r); //undefined
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

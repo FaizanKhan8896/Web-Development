@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array : Sort</title>
+    <script>
+        //lexigraphical sorting
+        // let a = [10, 90, 24, 27, 2, 2, 1]
+        // a.sort();
+        // console.log(a)
+
+
+        // let b = ['Sachin', 'Amit', 'Yuvraj', 'Zaheer', 'Rahul']
+        // b.sort()
+        // console.log(b)
+
+
+        // let a = [10, 90, 24, 27, 2, 2, 1]
+        //     //a-b to sort in ascending
+        // a.sort((a, b) => {
+        //     return a - b
+        // });
+        // console.log(a)
+        //     //b-a to sort in descending
+        // a.sort((a, b) => {
+        //     return b - a
+        // });
+        // console.log(a)
+
+
+
+
+
+        // let products = [{
+        //         proName: 'Smart Watch',
+        //         price: 4000
+        //     }, {
+        //         proName: 'Television',
+        //         price: 14000
+        //     }, {
+        //         proName: 'Laptop',
+        //         price: 50000
+        //     }, {
+        //         proName: 'Air Pods',
+        //         price: 1000
+        //     },
+
+        // ]
+        // products.sort((a, b) => {
+        //     return a.price - b.price
+        // })
+        // console.log(products);
+
+
+
+        let userData = [{
+                uid: 1004,
+                unm: 'Sachin',
+                age: 25
+            }, {
+                uid: 1002,
+                unm: 'Zaheer',
+                age: 45
+            }, {
+                uid: 1003,
+                unm: 'Rahul',
+                age: 48
+            }
+
+        ]
+
+        let a = [...userData].sort((a, b) => {
+            return a.uid - b.uid;
+        })
+        console.log(a);
+
+
+        let b = [...userData].sort((a, b) => {
+            return a.unm.localeCompare(b.unm);
+        })
+        console.log(b);
+
+
+        let c = [...userData].sort((a, b) => {
+            return a.age - b.age;
+        })
+        console.log(c);
+    </script>
+</head>
+
+<body>
+    <h1>Array : Sort</h1>
+</body>
+
+</html>

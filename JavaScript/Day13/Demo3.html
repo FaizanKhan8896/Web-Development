@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        let str = "Hello \"World\""
+        console.log(str);
+
+        str = "Hello \\\"World\""
+        console.log(str);
+
+        //interpolation or template string or template literals
+        let name = "Sachin",
+            age = 46
+        str = `Welcome ${name}, my age : ${age}`
+        console.log(str);
+
+        let str1 = "A quick brown fox jumps over the alzy dog"
+        console.log(str1.indexOf("fox")) //14
+        console.log(str1.indexOf("o", 11)) //str.indexOf(substr,startIdx) 15
+
+
+        console.log(str1.lastIndexOf("o")) //39
+        console.log(str1.includes("cat")) //false
+
+        console.log(str1.startsWith("A")) //true
+        console.log(str1.endsWith("A")) //false
+
+        let arr = str1.split("fox"); //after split - in ans fox not included
+        console.log(arr);
+
+
+        let a = str1.replace("fox", "cat")
+        console.log(a);
+        console.log(str1);
+
+
+        let b = str1.replaceAll("o", "#")
+        console.log(b);
+        console.log(str1);
+
+
+
+        let c = str.split('') //split all characters
+        console.log(c);
+    </script>
+</head>
+
+<body>
+    <h1>String</h1>
+</body>
+
+</html>

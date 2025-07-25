@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous and Arrow Function</title>
+    <script>
+        //anonymous function
+        //1. IIFE = immediately invoke function expression
+        (function() {
+            console.log("Message ")
+        })();
+
+        (function(c, d) {
+            console.log(c + d)
+        })(5, 100);
+
+        let x = (function(a, b) {
+            console.log(a + b)
+        })(5, 10)
+        console.log(x)
+
+
+        let c = function(a, b) {
+            console.log(a + b)
+        }
+        c(5, 10)
+
+
+
+        //2. arrow function 
+        //sigle expression implicitly returns
+        const s = (a, b) => a + b;
+        console.log(s(5, 10))
+
+
+        //explicitly return
+        const t = ((a, b) => {
+            return a * b;
+        });
+        let res = t(5, 10)
+        console.log(res)
+    </script>
+</head>
+
+<body>
+    <h1>Anonymous and Arrow Function</h1>
+</body>
+
+</html>

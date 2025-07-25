@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        let a = [1, 2, 3, 4, 5]
+        a.push(300) //add at last
+        console.log(a);
+
+
+        a.unshift(300) //add element at the beginning
+        console.log(a);
+
+        //remove element from last also return that element
+        console.log(a.pop(300), a);
+
+        //remove element from first also return that element
+        console.log(a.shift(300), a);
+
+
+        //slice
+        console.log(a.slice(0, 2));
+
+
+        //splice
+        let b = [100, 200, 300, 400, 500]
+        console.log(b);
+        b.splice(3, 0, 1, 2, 3, 4, 5) //2nd place = 0 insertion
+        console.log(b);
+
+        let c = [100, 200, 300, 400, 500]
+        console.log(c);
+        c.splice(3, 1, 1, 2, 3) //2nd place = 1 overrite how many bits
+        console.log(c);
+
+
+        let d = [100, 200, 300, 400, 500]
+        console.log(d);
+        d.splice(3, 3, 1, 2, 3) //2nd place = 3 overrite how(3) many bits
+        console.log(d);
+
+        d.splice(0, 3)
+        console.log(d);
+    </script>
+</head>
+
+<body>
+    <h1>Array</h1>
+</body>
+
+</html>
